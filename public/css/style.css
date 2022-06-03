@@ -199,3 +199,35 @@ footer .card .content-card-footer p{
     color: red;
     font-size: 11px;
 }
+
+.success{
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.error{
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.foto-wrapper{
+    text-align: center;
+}
+.foto-wrapper h1{
+    margin: 20px 0;
+}
+
+.mt-5{
+    margin-top: 40px;
+}
+
+h3{
+    color: var(--primary);
+}

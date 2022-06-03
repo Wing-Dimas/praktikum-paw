@@ -7,6 +7,20 @@
     @slot("title","Data Mahasiswa")
     
     @slot('content')
+        @if(session("status"))
+        <div class="flash">
+            @if(session("status") == "success")
+            <div class="success">
+                <p>{{ session("pesan") }}</p>
+            </div>
+            @else
+            <div class="error">
+                <p>{{ session("pesan") }}</p>
+            </div>
+            @endif
+            <br>
+        </div>
+        @endif
         <div class="show-data-mahasiswa">
             @foreach($mahasiswa as $mhs)
             <div class="card">

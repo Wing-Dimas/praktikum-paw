@@ -7,6 +7,20 @@
     @slot('title', "Input Data Mahasiswa")
     
     @slot('content')
+        @if(session("status"))
+        <div class="flash">
+            @if(session("status") == "success")
+            <div class="success">
+                <p>{{ session("pesan") }}</p>
+            </div>
+            @else
+            <div class="error">
+                <p>{{ session("pesan") }}</p>
+            </div>
+            @endif
+            <br>
+        </div>
+        @endif
         <form action="/" method="post" class="form-input">
             @csrf
             <div class="row">
