@@ -27,7 +27,7 @@ class MahasiswaRequest extends FormRequest
         return [
             "nrp" => ["required", "min:12", "max:12", "string"],
             "nama" => ["required", "string"],
-            "email" => ["required","email"],
+            "email" => ["required","email", "unique:tbl_mahasiswa,email"],
             "alamat" => ["required"],
             "ipk" => ["required", "numeric"],
             "status" => ["required"]

@@ -41,7 +41,7 @@ class MahasiswaController extends Controller
         return view("edit", compact("mahasiswa"));
     }
 
-    public function update(MahasiswaRequest $request)
+    public function update(Request $request)
     {
         if($this->sameNrp($request)){
             return redirect()->back()->with([
